@@ -118,6 +118,10 @@ def report(
         f.write(f"- Слишком много пропусков: **{quality_flags['too_many_missing']}**\n\n")
         problem_cols = missing_df[missing_df["missing_share"] > min_missing_share]
         problem_count = len(problem_cols)
+        
+        f.write(f"- Низкая дисперсия у числовых колонок: **{quality_flags['has_low_variance_numeric']}**\n")
+        f.write(f"- Высокая уникальность у категориальных: **{quality_flags['has_high_cardinality_categorical']}**\n\n")
+        
         f.write("## Параметры анализа\n\n")
         f.write(f"- Top-K категорий: **{top_k}**\n")
         f.write(f"- Макс. гистограмм: **{max_hist_columns}**\n")
