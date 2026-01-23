@@ -1,0 +1,20 @@
+{
+  "S07-hw-dataset-01.csv": {
+    "best_k": 2,
+    "best_silhouette": 0.5216395622404242,
+    "DBSCAN_noise_ratio": 0.033666666666666664,
+    "stability_mean_ari": null
+  },
+  "S07-hw-dataset-02.csv": {
+    "best_k": 2,
+    "best_silhouette": 0.3068610017701601,
+    "DBSCAN_noise_ratio": 0.045,
+    "stability_mean_ari": 0.9702157509815006
+  },
+  "S07-hw-dataset-03.csv": {
+    "best_k": 3,
+    "best_silhouette": 0.3155447003782518,
+    "DBSCAN_noise_ratio": 0.0222,
+    "stability_mean_ari": null
+  }
+}
